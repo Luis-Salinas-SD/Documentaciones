@@ -40,7 +40,7 @@ Clonar el tema en la carpeta ***/themes***
 $ git clone https://github.com/onweru/compose.git
 ```
 Editar el archivo **config.toml**
-```console
+```bash
 baseURL = "https://dominio-git/"
 languageCode = "en-us"
 title = "My pagina Hugo"
