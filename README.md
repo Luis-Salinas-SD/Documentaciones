@@ -79,7 +79,7 @@ $     hugo
 
 $     git add *; git commit -m "Creando blog con hugo"; git push origin master
 ```
-
+----------
 <a name="item2"></a>
 ### Contendio 2
 Ejecuta el código usando este enlace de JSFiddle y observa que la sentencia alert(), dentro de mostrarNombre(), muestra con éxito el valor de la variable nombre, la cual fue declarada en la función externa. Este es un ejemplo de ámbito léxico, el cual describe cómo un analizador sintáctico resuelve los nombres de las variables cuando hay funciones anidadas. La palabra léxico hace referencia al hecho de que el ámbito léxico se basa en el lugar donde una variable fue declarada para determinar dónde esta variable estará disponible. Las funciones anidadas tienen acceso a las variables declaradas en su ámbito exterior.
