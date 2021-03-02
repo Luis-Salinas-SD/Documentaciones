@@ -79,6 +79,7 @@ $     hugo
 
 $     git add *; git commit -m "Creando blog con hugo"; git push origin master
 ```
+`linea 82`
 ----------
 <a name="item2"></a>
 ### Contendio 2
