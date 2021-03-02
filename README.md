@@ -18,25 +18,25 @@ $   cd documentacion
 ```
 ## Inicialización del repo
 Una vez dentro de la carpeta, debemos inicializar **git** con este comando.
-```console
+```bash
 $   git init
 ```
 ## Configuración del Tema
 
 ### Opción A (submodulo)
 Ahora, lo que haremos es crear un submodule con un template([tema](https://github.com/onweru/compose.git)) llamado ***compose***.
-```console
+```bash
 $ git submodule add https://github.com/onweru/compose.git themes/compose
 ```
 Agregamos ese tema al **config.toml**, y cambiaremos el directorio donde se crean nuestros estáticos para que Github pages lo reconozca sin problema.
-```console
+```bash
 $ echo ‘theme = “compose”’ >> config.toml; echo ‘publishDir = “docs”’ >> config.toml
 ```
 
 ### Opcion B (clonar el tema)
 Clonar el tema en la carpeta ***/themes***
 
-```console
+```bash
 $ git clone https://github.com/onweru/compose.git
 ```
 Editar el archivo **config.toml**
@@ -49,32 +49,32 @@ publishDir = "docs"     # directorio dónde se crean los estaticos para que gith
 ```
 ## Creación de un post
 Crear una publicación.
-```console
+```bash
 hugo new posts/prueba.md
 ```
-## Del lado de **github papges**
+## Del lado de **github pages**
 1. Crear un repositorio con el mismo nombre del proyecto.
 
 2. en la carpeta principal del proyecto reinicializar el repo
-```console
+```bash
 $ git init
 ```
 3. Subir los cambios al servidor git
-```console
+```bash
 $ git remote add origin git@github.com:designing-rivers/quickstart.
 ```
 4. Ahora usamos el comando **hugo** para crear los estáticos en una carpeta llamada /docs
-```console
+```bash
 $   hugo
 ```
 5. Lo siguiente que haremos es crear un commit y subirlo a nuestro repositorio
-```console
+```bash
 $   git add *; git commit -m "Creando blog con hugo"; git push origin master
 ```
 6. Una vez hecho esto nos vamos a **Settings**, **Github Pages**, **Source** y seleccionamos la rama ***master***, ***/docs folder***
 7. y la ruta que nos retorna la debemos colocar en el archivo de configuracion **config.toml** y la colocamos en el parametro **baseURL**
 8. nuevamente corremos el comando **hugo** y enviamos los cambios al servidor
-```console
+```bash
 $     hugo
 
 $     git add *; git commit -m "Creando blog con hugo"; git push origin master
